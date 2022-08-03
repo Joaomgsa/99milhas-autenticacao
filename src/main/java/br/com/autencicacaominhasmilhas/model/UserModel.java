@@ -18,11 +18,11 @@ public class UserModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer UserId;
+	private Integer userId;
 	
 	@Column(unique =true)
-	private String Login;
+	private String login;
 	
-	private String Password;
+	private String password;
 
 }

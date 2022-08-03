@@ -28,6 +28,7 @@ public class UserController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
+	@GetMapping("/save")
 	public ResponseEntity<UserModel> save(@RequestBody UserModel user) {
 		return ResponseEntity.ok(repository.save(user));
 	}

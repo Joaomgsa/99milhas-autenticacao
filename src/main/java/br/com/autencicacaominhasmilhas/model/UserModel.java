@@ -1,5 +1,6 @@
 package br.com.autencicacaominhasmilhas.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +20,7 @@ public class UserModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer UserId;
 	
+	@Column(unique =true)
 	private String Login;
 	
 	private String Password;

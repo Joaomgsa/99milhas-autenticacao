@@ -8,5 +8,5 @@ import br.com.autencicacaominhasmilhas.model.UserModel;
 
 public interface UserRepository extends JpaRepository<UserModel, Integer>{
 
-	public Optional<UserModel> findByLogin(String login);
+	/*public Optional<UserModel> findByLogin(String login); */
 }
